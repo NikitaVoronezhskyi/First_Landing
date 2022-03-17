@@ -482,16 +482,22 @@ h1 {
 .price-block {
   justify-content: center;
   display: flex;
-  align-items: flex-end;
+  align-content: space-between;
   flex-wrap: wrap;
   padding: 15px;
   gap: 15px;
   width: 418px;
 }
 
+.center-img{
+  height: 283px;
+}
+
 .price-text-block{
   display: flex;
+  height: 50%;
   flex-direction: column;
+  justify-content: space-between;
   gap: 10px;
 }
 
