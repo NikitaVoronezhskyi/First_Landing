@@ -416,7 +416,7 @@ h1 {
 }
 
 .small-header {
-  margin-top: 39px;
+  padding: 25px 0;
   justify-content: left;
   font-size: 30px;
   color: #263238;
@@ -471,39 +471,33 @@ h1 {
 }
 
 .pricing {
-  margin-top: 223px;
+  padding: 100px 0px;
 }
 .prices {
   display: flex;
   gap: 40px;
-  margin-top: 71px;
+  padding: 45px 0;
 }
 
-.live {
-  margin-top: 34px;
-}
-
-.personal {
-  margin-top: 5px;
-}
-.personal > .per-mounth {
-  margin-top: 59px;
-}
-.live > .per-mounth {
-  margin-top: 59px;
-}
 .price-block {
+  justify-content: center;
   display: flex;
+  align-items: flex-end;
   flex-wrap: wrap;
+  padding: 15px;
+  gap: 15px;
   width: 418px;
+}
+
+.price-text-block{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .per-mounth {
   align-items: center;
-  margin-top: 30px;
   background: #eeeeee;
-  border: 1px solid #eeeeee;
-  border-radius: 5px;
   width: 240px;
   height: 45px;
   display: flex;
@@ -511,23 +505,12 @@ h1 {
   gap: 8px;
   font-weight: 400;
   font-size: 30px;
-  min-width: 0;
-  min-height: 0;
-}
-
-.per-mounth:hover,
-.per-mounth:focus-within {
-  transition: 250ms liner;
-  background-color: white;
-  border: 1px solid #263238;
-  transition: 250ms linear;
 }
 
 .per-mouth-price {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 0px;
 }
 
 .per-mounth-text {
