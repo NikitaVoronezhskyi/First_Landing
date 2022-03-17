@@ -238,6 +238,7 @@ body {
   background: #fff;
 }
 
+/*===========COMMON START=============*/
 .container {
   width: 100%;
   max-width: 1340px;
@@ -280,6 +281,23 @@ body {
   font-size: 20px;
 }
 
+.common-text{
+  font-size: 20px;
+  line-height: 1.5;
+  color: #8f95a5;
+}
+
+.common-lg-text{
+  font-size: 24px;
+}
+
+.common-sm-text{
+  font-size: 16px;
+}
+
+/*===========COMMON END=============*/
+
+/*===========HEADER START=============*/
 .header {
   padding: 55px 0;
 }
@@ -310,24 +328,7 @@ body {
 .nav a:hover {
   text-decoration: underline;
 }
-
-/* .navbar > .btn {
-  border-radius: 5px;
-  border: 2px solid #263238;
-  color: #263238;
-  background: white;
-  min-height: 70px;
-  min-width: 220px;
-  font-size: 24px;
-}
-
-.navbar > .btn:hover,
-.navbar > .btn:focus {
-  border: white;
-  background-color: #263238;
-  color: white;
-  transition: 250ms linear;
-} */
+/*===========HEADER END=============*/
 
 .promo {
   padding: 45px 0 75px;
@@ -345,39 +346,17 @@ h1 {
   font-weight: 600;
   font-size: 64px;
   line-height: 80px;
-  background: url(../icons/Group.svg) no-repeat;
+  background: url(../icons/group.webp) no-repeat;
   background-position: 424px 111px;
 }
 
 .promo-text {
   margin-top: 40px;
-  font-size: 24px;
-  color: #8f95a5;
-  line-height: 36px;
 }
+
 .promo-btn {
   margin-top: 90px;
 }
-
-/* .btn {
-  cursor: pointer;
-  background: #263238;
-  font-weight: 400;
-  font-size: 36px;
-  color: white;
-  border-radius: 15px;
-  min-height: 118px;
-  min-width: 438px;
-}
-
-.btn:focus-within,
-.btn:hover {
-  border: #263238;
-  border: 2px solid #263238;
-  background-color: white;
-  color: #263238;
-  transition: 250ms linear;
-} */
 
 .skills {
   margin-top: 147px;
@@ -444,98 +423,16 @@ h1 {
 }
 
 .card-text {
-  color: #8f95a5;
-  line-height: 1.5;
   width: 355px;
 }
 
-.cardbtn {
-  margin-top: 46px;
-  margin-bottom: 92px;
-  min-height: 27px;
-  min-width: 103px;
-  padding: 17px 63px;
-  border-radius: 5px;
-  font-size: 18px;
-  font-weight: 500;
-}
-
-.horizontal-section1 {
-  display: flex;
-  gap: 18px;
-}
-
-.hs1card {
-  position: relative;
-  padding: 41px;
-  width: 434px;
-  height: 531px;
-}
-
-.hs1card1 > img {
-  position: absolute;
-  top: 4px;
-  right: 19px;
-  bottom: 242px;
-  left: 122px;
-}
-
-.hs1card2 > img {
-  position: absolute;
-  left: 1px;
-  top: 9px;
-  right: 63px;
-  bottom: 276px;
-}
-
-.hs1card2 {
-  padding: 38px;
-}
-
-.hs1card > .section-header {
-  margin-top: 251px;
-}
-
-.hs1card > .card-text {
-  margin-top: 10px;
-}
-
-.hs1card > .btn {
-  margin-top: 25px;
-  margin-bottom: 44px;
-}
-
-.hs2card1 {
-  position: relative;
-  padding: 43px 48px;
-  width: 885px;
-  height: 343px;
-}
-
-.horizontal-section2 {
-  margin-top: 20px;
-}
-
-.hs2card1 > img {
-  position: absolute;
-  right: 25px;
-  top: 44px;
-  bottom: 44px;
-  left: 478px;
-}
-
-.hs2card1 > .btn {
-  margin-top: 25px;
-  margin-bottom: 68px;
-}
-
 .about {
-  margin-top: 252px;
+  padding: 200px 0;
 }
 
 .about-block {
   display: flex;
-  background: url(../icons/about.svg) no-repeat right;
+  background: url(../icons/about.webp) no-repeat right;
 }
 
 .about-text-block {
@@ -546,11 +443,8 @@ h1 {
   justify-content: normal;
 }
 
-.block-text {
-  display: block;
+.about-text {
   margin-top: 35px;
-  font-size: 20px;
-  line-height: 30px;
 }
 
 .numbers {
@@ -650,7 +544,7 @@ h1 {
 .contact-block {
   display: flex;
   justify-content: right;
-  background: url(../icons/contact.svg) no-repeat left;
+  background: url(../icons/contact.webp) no-repeat left;
 }
 .contact-header {
   margin-top: 44px;
