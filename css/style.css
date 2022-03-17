@@ -359,7 +359,7 @@ h1 {
 }
 
 .skills {
-  margin-top: 147px;
+  padding: 75px 0;
 }
 
 .section-header {
@@ -430,8 +430,15 @@ h1 {
   padding: 200px 0;
 }
 
-.about-block {
+.about-main{
   display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 635px;
+}
+
+.about-block {
+  padding: 40px 0;
   background: url(../icons/about.webp) no-repeat right;
 }
 
@@ -443,31 +450,24 @@ h1 {
   justify-content: normal;
 }
 
-.about-text {
-  margin-top: 35px;
-}
 
-.numbers {
+.numbers{
   display: flex;
   justify-content: space-between;
+  align-content: center;
 }
 
-.numbers-center {
+.numbers-inside{
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
 }
 
-.numbers-header {
-  color: #2a3246;
+.numbers-inside-number{
+  color: #2A3246;
   font-size: 48px;
   font-weight: 600;
-}
-
-.numbers-text {
-  display: flex;
-  justify-content: center;
-  margin-top: 10px;
-  font-size: 20px;
 }
 
 .pricing {
@@ -527,7 +527,7 @@ h1 {
 }
 
 .contact {
-  margin-top: 290px;
+  padding: 100px 0;
 }
 
 .contact-block {
