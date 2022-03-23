@@ -241,7 +241,7 @@ body {
 /*===========COMMON START=============*/
 .container {
   width: 100%;
-  max-width: 1340px;
+  max-width: 1350px;
   margin: 0 auto;
 }
 
@@ -281,18 +281,24 @@ body {
   font-size: 20px;
 }
 
-.common-text{
+.common-text {
   font-size: 20px;
   line-height: 1.5;
   color: #8f95a5;
 }
 
-.common-lg-text{
+.common-lg-text {
   font-size: 24px;
 }
 
-.common-sm-text{
+.common-sm-text {
   font-size: 16px;
+}
+
+.section-image{
+  display: flex;
+  flex: 1;
+  width: 49%;
 }
 
 /*===========COMMON END=============*/
@@ -315,15 +321,34 @@ body {
   align-items: center;
 }
 
+.desktop-nav{
+  flex: 1;
+  display: flex;
+  justify-content: center
+}
+
 .nav {
+  flex: 1;
   font-size: 20px;
   font-weight: 500;
   display: flex;
   align-items: center;
   gap: 30px;
   color: #263238;
+  justify-content: center;
 }
 
+.burger{
+  display: block;
+}
+
+.line{
+  display: block;
+  height: 4px;
+  width: 100%;
+  border-radius: 10px;
+  background: #0e2431;
+}
 .nav a:focus,
 .nav a:hover {
   text-decoration: underline;
@@ -335,23 +360,28 @@ body {
 }
 
 .promo-container {
-  background: url(../icons/girl.webp) no-repeat right;
+  display: flex;
+  gap: 150px;
 }
 
 .promo-block {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 60px;
   width: 550px;
+  background: url(../icons/group.webp) no-repeat;
+  background-position: 100% 25%;
+}
+
+.promo-text{
+  margin-top: 50px;
+}
+
+.promo-btn{
+  margin-top: 62px;
 }
 
 h1 {
   font-weight: 600;
   font-size: 64px;
   line-height: 80px;
-  background: url(../icons/group.webp) no-repeat;
-  background-position: 424px 111px;
 }
 
 .skills {
@@ -374,11 +404,12 @@ h1 {
 .card-group {
   display: flex;
   flex-wrap: wrap;
+  width: 67%;
   gap: var(--gap);
 }
 .card {
   padding: 45px;
-  width: 435px;
+  width: 33%;
   background-color: #f5f5f5;
 }
 .card-hw {
@@ -391,20 +422,20 @@ h1 {
   align-items: center;
   flex-direction: row-reverse;
 }
-.card-img{
+.card-img {
   width: 100%;
   height: 350px;
   object-fit: contain;
   object-position: right;
 }
-.card-horizontal>.card-img{
+.card-horizontal > .card-img {
   width: 50%;
   height: 250px;
 }
-.card-hw>.card-img{
+.card-hw > .card-img {
   height: 275px;
 }
-.card-body{
+.card-body {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -419,28 +450,24 @@ h1 {
   font-weight: 600;
 }
 
-.per-mouth-price{
+.per-mouth-price {
   font-weight: 400;
-}
-
-.card-text {
-  width: 355px;
 }
 
 .about {
   padding: 100px 0;
 }
 
-.about-main{
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  width: 635px;
+
+.about-text{
+  margin-top: 23px;
 }
 
 .about-block {
+  display: flex;
+  align-items:center;
+  gap: 194px;
   padding: 40px 0;
-  background: url(../icons/about.webp) no-repeat right;
 }
 
 .about-text-block {
@@ -451,22 +478,22 @@ h1 {
   justify-content: normal;
 }
 
-
-.numbers{
+.numbers {
+  margin-top: 35px;
   display: flex;
   justify-content: space-between;
   align-content: center;
 }
 
-.numbers-inside{
+.numbers-inside {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 10px;
 }
 
-.numbers-inside-number{
-  color: #2A3246;
+.numbers-inside-number {
+  color: #2a3246;
   font-size: 48px;
   font-weight: 600;
 }
@@ -481,25 +508,26 @@ h1 {
 }
 
 .price-block {
-  justify-content: center;
   display: flex;
-  align-content: space-between;
-  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
   padding: 15px;
   gap: 15px;
   width: 418px;
 }
 
-.center-img{
+.center-img {
   height: 283px;
 }
 
-.price-text-block{
+.price-text-block {
   display: flex;
-  height: 50%;
   flex-direction: column;
-  justify-content: space-between;
   gap: 10px;
+  flex: 1;
+}
+.block-text {
+  flex: 1;
 }
 
 .per-mounth {
@@ -526,6 +554,10 @@ h1 {
   font-size: 18px;
 }
 
+.contact-us{
+  width: 45%;
+}
+
 .contact {
   padding: 50px 0;
 }
@@ -533,21 +565,19 @@ h1 {
 .contact-block {
   display: flex;
   padding: 100px 0;
-  justify-content: right;
-  background: url(../icons/contact.webp) no-repeat left;
+  align-items: center;
+  gap: 111px;
 }
 .contact-header {
   justify-content: left;
 }
 
-.contact-us {
-  display: flex;
-  flex-direction: column;
-  gap: 35px;
-  width: 776px;
+.contact-text{
+  margin-top: 37px;
 }
 
 .form-block {
+  margin-top: 52px;
   display: flex;
   gap: 12px;
 }
@@ -556,9 +586,7 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: center;
-  min-width: 0;
-  min-height: 0;
-  width: 264px;
+  width: 40%;
   height: 80px;
   font-weight: 500;
   padding: 21px 85px;
@@ -567,7 +595,7 @@ h1 {
 .form {
   display: flex;
   align-items: center;
-  width: 450px;
+  width: 60%;
   height: 80px;
   border: 1px solid #8f95a5;
   border-radius: 10px;
@@ -576,14 +604,68 @@ h1 {
 
 .form-input {
   font-family: Poppins;
-  width: 384px;
+  width: 100%;
   height: 40px;
   border: none;
 }
-
 
 .footer {
   border-top: solid #c4c4c4 1px;
   height: 1px;
   padding: 60px 0;
+}
+
+.footernav{
+  justify-content: flex-end;
+}
+
+/* `xxl` applies to xx-large devices (large desktops, less than 1400px) */
+@media (max-width: 1399.98px) {
+  .container{
+    max-width: 1140px;
+  }
+}
+/* `xl` applies to x-large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+  .container{
+    max-width: 960px;
+  }
+  .promo-block {
+    background-position: 100% 25%;
+  }
+  h1{
+    font-size: 48px;
+  }
+  .common-text{
+    font-size: 16px;
+  }
+  .common-lg-text{
+    font-size: 22px;
+  }
+  .common-sm-text{
+    font-size: 14px;
+  }
+  .btn{
+    font-size: 24px;
+    padding: 22px 79px;
+  }
+}
+/* `lg` applies to large devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+  .container{
+    max-width: 720px;
+  }
+}
+/*-----------------------------------------------------------------------*/
+/* `md` applies to medium devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+  .container{
+    max-width: 540px;
+  }
+}
+/* `sm` applies to small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+}
+/* `xsm` applies to x-small devices (iPhones 5/SE, equals to 320px) */
+@media (max-width: 320px) {
 }
