@@ -241,7 +241,7 @@ body {
 /*===========COMMON START=============*/
 .container {
   width: 100%;
-  max-width: 1350px;
+  max-width: 1340px;
   margin: 0 auto;
 }
 
@@ -295,17 +295,19 @@ body {
   font-size: 16px;
 }
 
-.section-image{
-  display: flex;
-  flex: 1;
-  width: 49%;
-}
-
 /*===========COMMON END=============*/
 
 /*===========HEADER START=============*/
 .header {
   padding: 55px 0;
+}
+.burger{
+  display: none;
+}
+
+.desktop-nav{
+  display: flex;
+  flex: 1;
 }
 .logo {
   font-size: 36px;
@@ -321,13 +323,8 @@ body {
   align-items: center;
 }
 
-.desktop-nav{
-  flex: 1;
-  display: flex;
-  justify-content: center
-}
-
 .nav {
+  justify-content: center;
   flex: 1;
   font-size: 20px;
   font-weight: 500;
@@ -335,20 +332,8 @@ body {
   align-items: center;
   gap: 30px;
   color: #263238;
-  justify-content: center;
 }
 
-.burger{
-  display: block;
-}
-
-.line{
-  display: block;
-  height: 4px;
-  width: 100%;
-  border-radius: 10px;
-  background: #0e2431;
-}
 .nav a:focus,
 .nav a:hover {
   text-decoration: underline;
@@ -361,27 +346,23 @@ body {
 
 .promo-container {
   display: flex;
-  gap: 150px;
+  justify-content: space-between;
 }
 
 .promo-block {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 60px;
   width: 550px;
-  background: url(../icons/group.webp) no-repeat;
-  background-position: 100% 25%;
-}
-
-.promo-text{
-  margin-top: 50px;
-}
-
-.promo-btn{
-  margin-top: 62px;
 }
 
 h1 {
   font-weight: 600;
   font-size: 64px;
-  line-height: 80px;
+  line-height: 1.5;
+  background: url(../icons/group.webp) no-repeat;
+  background-position: 424px 111px;
 }
 
 .skills {
@@ -413,6 +394,8 @@ h1 {
   background-color: #f5f5f5;
 }
 .card-hw {
+  display: flex;
+  flex-direction: column;
   width: calc((100% - var(--gap)) / 2);
 }
 .card-horizontal {
@@ -424,22 +407,26 @@ h1 {
 }
 .card-img {
   width: 100%;
-  height: 350px;
   object-fit: contain;
   object-position: right;
 }
 .card-horizontal > .card-img {
   width: 50%;
-  height: 250px;
 }
 .card-hw > .card-img {
-  height: 275px;
+  height: 50%;
 }
 .card-body {
   display: flex;
+  flex: 1;
   flex-direction: column;
   align-items: flex-start;
-  gap: 25px;
+  gap: 15px;
+}
+
+.card-text{
+  display: flex;
+  flex: 1;
 }
 
 .small-header {
@@ -458,28 +445,34 @@ h1 {
   padding: 100px 0;
 }
 
+.about-main {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
 
 .about-text{
-  margin-top: 23px;
+  display: flex;
+  align-items: center;
+  flex: 1;
 }
 
 .about-block {
   display: flex;
-  align-items:center;
-  gap: 194px;
+  justify-content: space-between;
   padding: 40px 0;
 }
 
-.about-text-block {
-  width: 635px;
-}
+  .about-text-block {
+    display: flex;
+    width: 48%;
+  }
 
 .about-main > .section-header {
   justify-content: normal;
 }
 
 .numbers {
-  margin-top: 35px;
   display: flex;
   justify-content: space-between;
   align-content: center;
@@ -517,7 +510,7 @@ h1 {
 }
 
 .center-img {
-  height: 283px;
+  height: 50%;
 }
 
 .price-text-block {
@@ -554,10 +547,6 @@ h1 {
   font-size: 18px;
 }
 
-.contact-us{
-  width: 45%;
-}
-
 .contact {
   padding: 50px 0;
 }
@@ -565,19 +554,20 @@ h1 {
 .contact-block {
   display: flex;
   padding: 100px 0;
-  align-items: center;
-  gap: 111px;
+  justify-content: space-between;
 }
 .contact-header {
   justify-content: left;
 }
 
-.contact-text{
-  margin-top: 37px;
+.contact-us {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  width: 776px;
 }
 
 .form-block {
-  margin-top: 52px;
   display: flex;
   gap: 12px;
 }
@@ -586,7 +576,7 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 40%;
+  width: 264px;
   height: 80px;
   font-weight: 500;
   padding: 21px 85px;
@@ -595,7 +585,7 @@ h1 {
 .form {
   display: flex;
   align-items: center;
-  width: 60%;
+  width: 450px;
   height: 80px;
   border: 1px solid #8f95a5;
   border-radius: 10px;
@@ -604,7 +594,7 @@ h1 {
 
 .form-input {
   font-family: Poppins;
-  width: 100%;
+  width: 384px;
   height: 40px;
   border: none;
 }
@@ -616,6 +606,7 @@ h1 {
 }
 
 .footernav{
+  display: flex;
   justify-content: flex-end;
 }
 
@@ -630,38 +621,13 @@ h1 {
   .container{
     max-width: 960px;
   }
-  .promo-block {
-    background-position: 100% 25%;
-  }
-  h1{
-    font-size: 48px;
-  }
-  .common-text{
-    font-size: 16px;
-  }
-  .common-lg-text{
-    font-size: 22px;
-  }
-  .common-sm-text{
-    font-size: 14px;
-  }
-  .btn{
-    font-size: 24px;
-    padding: 22px 79px;
-  }
 }
 /* `lg` applies to large devices (tablets, less than 992px) */
 @media (max-width: 991.98px) {
-  .container{
-    max-width: 720px;
-  }
 }
 /*-----------------------------------------------------------------------*/
 /* `md` applies to medium devices (landscape phones, less than 768px) */
 @media (max-width: 767.98px) {
-  .container{
-    max-width: 540px;
-  }
 }
 /* `sm` applies to small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
