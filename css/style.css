@@ -358,11 +358,12 @@ body {
 }
 
 h1 {
+  width: 100%;
   font-weight: 600;
   font-size: 64px;
   line-height: 1.5;
   background: url(../icons/group.webp) no-repeat;
-  background-position: 424px 111px;
+  background-position: 85% 90%;
 }
 
 .skills {
@@ -510,7 +511,7 @@ h1 {
 }
 
 .center-img {
-  height: 50%;
+  height: 48%;
 }
 
 .price-text-block {
@@ -576,7 +577,7 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 264px;
+  width: 30%;
   height: 80px;
   font-weight: 500;
   padding: 21px 85px;
@@ -585,7 +586,7 @@ h1 {
 .form {
   display: flex;
   align-items: center;
-  width: 450px;
+  width: 70%;
   height: 80px;
   border: 1px solid #8f95a5;
   border-radius: 10px;
