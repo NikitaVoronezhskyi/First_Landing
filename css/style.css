@@ -379,7 +379,7 @@ body {
 }
 
 .cards {
-  padding: 50px 0;
+  padding: 100px 0;
   display: flex;
   --gap: 18px;
   gap: var(--gap);
@@ -449,7 +449,7 @@ body {
 .about-main {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 30px;
 }
 
 .about-text{
@@ -462,7 +462,7 @@ body {
   display: flex;
   justify-content: space-between;
   flex-direction: row-reverse;
-  padding: 40px 0;
+  padding: 100px 0;
 }
 
   .about-text-block {
@@ -499,7 +499,7 @@ body {
 .prices {
   display: flex;
   gap: 40px;
-  padding: 45px 0;
+  padding: 100px 0;
 }
 
 .price-block {
@@ -508,7 +508,7 @@ body {
   align-items: center;
   padding: 15px;
   gap: 15px;
-  width: 418px;
+  width: calc(100%/3);
 }
 
 .center-img {
@@ -601,7 +601,6 @@ body {
 
 .footer {
   border-top: solid #c4c4c4 1px;
-  height: 1px;
   padding: 60px 0;
 }
 
@@ -724,7 +723,7 @@ body {
     width: 40%;
   }
   .contact-image{
-    width: 312px;
+    width: 280px;
   }
   }
 
@@ -793,50 +792,60 @@ body {
     display: none;
   }
   .h1{
-    font-size: 36px;
+    font-size: 32px;
     background-size: 25%;
   }
+  .girl-image{
+    width: 300px;
+    height: 320px;
+  }
   .promo-block{
-    gap: 20px;
+    gap: 10px;
   }
   .common-text{
-    font-size: 14px;
+    font-size: 12px;
+  }
+  .cards{
+    padding: 50px 0px;
   }
   .card{
-    padding: 10px;
+    padding: 8px;
+  }
+  .card-hw > .card-img{
+    height: 170px;
   }
   .btn-lg{
     padding: 19px 67px;
-    font-size: 18px;
+    font-size: 17px;
   }
   .btn-sm{
-    font-size: 16px;
-    padding: 14px 42px;
+    font-size: 14px;
+    padding: 10px 25px;
   }
   .section-header{
     font-size: 30px;
   }
   .small-header{
-    font-size: 20px;
+    font-size: 21px;
   }
   .common-lg-text{
     font-size: 16px;
-  }
-  .common-sm-text{
-    font-size: 13px;
   }
 
   .numbers-inside-number{
     font-size: 22px;
   }
   .center-img{
-    height: 190px;
+    height: 150px;
+  }
+  .prices{
+    gap: 10px;
   }
   .price-block{
     padding: 5px;
   }
-  .block-text{
-    font-size: 14px;
+  .per-mounth{
+    padding: 5px;
   }
   .numbers-text{
     font-size: 14px;
@@ -846,20 +855,17 @@ body {
     height: 50px;
   }
   .form-input{
-    font-size: 14px;
+    font-size: 12px;
   }
   .contact-us{
     gap: 20px;
   }
   .contact-image{
-    width: 230px;
-    height: 210px;
+    width: 195px;
   }
   .about-image{
-    width: 295px;
-  }
-  .center-img{
-    height: 168px;
+    width: 270px;
+    height: 270px;
   }
   .contactbtn{
     padding: 15px 40px;
@@ -869,6 +875,21 @@ body {
 }
 /* `sm` applies to small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
+  .container{
+    width: 100%;
+  }
+  .common-text{
+    font-size: 16px;
+  }
+  .small-header{
+    font-size: 28px ;
+  }
+  .section-header{
+    font-size: 34px;
+  }
+  .logo{
+    font-size: 30px;
+  }
   .h1>br{
     display: none;
   }
@@ -877,10 +898,12 @@ body {
     align-items: center;
   }
   .girl-image{
-    width: 424px;
+    width: 100%;
+    height: 100%;
   }
   .promo-block{
     width: 100%;
+    gap: 30px;
     align-items: center;
   }
   .h1{
@@ -892,7 +915,140 @@ body {
   .btn-lg{
     padding: 24px 101px;
   }
+  .btn-sm{
+    font-size: 16px;
+    padding: 14px 54px;
+  }
+  .cards{
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0px;
+  }
+  .card{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 30px;
+    width: 67%;
+  }
+  .card-hw > .card-img{
+    height: 50%;
+  }
+  .card-horizontal > .card-img{
+    width: 100%;
+  }
+  .card-group{
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+  .card-body{
+    gap: 30px;
+  }
+  .about-block{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 50px 0px;
+  }
+  .about-image{
+    height: 100%;
+    width: 100%;
+  }
+  .about-text-block{
+    width: 90%;
+  }
+  .numbers-inside-number{
+    font-size: 24px;
+  }
+  .prices{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+    padding: 50px 0px;
+  }
+  .price-block{
+    width: 100%;
+    padding: 15px 0px;
+  }
+  .price-text-block{
+    width: 80%;
+    gap: 30px;
+    align-items: center;
+  }
+  .per-mounth{
+    height: 45px;
+    justify-content: center;
+  }
+  .numbers-text{
+    font-size: 16px;
+  }
+  .center-img{
+    height: 100%;
+  }
+  .contact-block{
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0px;
+    gap: 30px;
+  }
+  .contact-image{
+    width: 100%;
+  }
+  .contact-us{
+    width: 90%;
+  }
+  .form-block{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .form-input{
+    font-size: 16px;
+  }
+  .contactbtn{
+    width: 90%;
+  }
+  .footer-navbar{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+  .footernav{
+    flex-direction: column;
+  }
 }
 /* `xsm` applies to x-small devices (iPhones 5/SE, equals to 320px) */
 @media (max-width: 320px) {
+  .h1>br{
+    display: block;
+  }
+  .h1{
+    font-size: 30px;
+  }
+  .section-header{
+    font-size: 24px;
+  }
+  .small-header{
+    font-size: 18px;
+  }
+  .logo{
+    font-size: 24px;
+  }
+  .btn-lg{
+    padding: 19px 99px;
+  }
+  .btn-sm{
+    padding: 12px 31px;
+  }
+  .numbers{
+    flex-direction: column;
+    gap: 35px;
+  }
+  .per-mounth{
+    width: 75%;
+    padding: 5px 15px;
+  }
 }
