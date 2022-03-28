@@ -905,7 +905,7 @@ body {
     height: 100%;
   }
   .promo-block{
-    width: 100%;
+    width: 90%;
     gap: 30px;
     align-items: center;
   }
@@ -920,7 +920,7 @@ body {
   }
   .btn-sm{
     font-size: 16px;
-    padding: 14px 54px;
+    padding: 14px 50px;
   }
   .cards{
     flex-direction: column;
